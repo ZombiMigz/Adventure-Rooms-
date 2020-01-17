@@ -1,4 +1,3 @@
-version = '1.01'
 
 #load framework
 import framework

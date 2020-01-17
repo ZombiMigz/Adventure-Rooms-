@@ -14,7 +14,6 @@ player.health = 100
 def startup():
     import framework
     import main
-    framework.console('Running DolphinLeaf v.'+main.version)
     framework.printunknown("Hello, what's your name?")
     framework.guide('Type your name, then hit ENTER')
     player.name = input('')
