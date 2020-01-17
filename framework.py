@@ -4,13 +4,16 @@ def asterisk(output):
 def printclear(output):
     print(output)
 def printunknown(output):
-    print('???: ' + output)
+    print('[???]: ' + output)
+def console(output):
+  print('[Console]: ' + output)
+def guide(output):
+  print('[Guide]: ' + output)
 def clear():
   i = 0
   while i < 30:
       print ('\n')
       i += 1 
-
 
 def answer():
   choice = input('**************************************\n type: y/n\n')
@@ -35,10 +38,6 @@ def Win():
   print('YOU WIN')
 
 
-#console functions
-def console(output):
-  print('[Console]: ' + output)
-
 
 #output (temporary)
 def room():
@@ -47,3 +46,26 @@ def room():
     Vampire()
   else:
     Parasite()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

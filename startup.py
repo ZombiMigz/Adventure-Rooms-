@@ -1,4 +1,4 @@
-import framework
+
 
 
 #player framework
@@ -11,10 +11,15 @@ player.maxhealth = 100
 player.health = 100
 
 #startup
-framework.printunknown("Hello, what's your name?")
-player.name = input('')
-framework.printunknown("Hi " + player.name + ".")
-framework.console('player name set to ' + player.name)
+def startup():
+    import framework
+    import main
+    framework.console('Running DolphinLeaf v.'+main.version)
+    framework.printunknown("Hello, what's your name?")
+    framework.guide('Type your name, then hit ENTER')
+    player.name = input('')
+    framework.printunknown("Hi " + player.name + ".")
+    framework.console('Player name set to ' + player.name)
 
 #class selection
 def classSelection():
@@ -32,4 +37,5 @@ def classSelection():
                 framework.printclear('')
                 continue
             else:
-                print("I'm sorry, I didn't understand. Please type y or n.")
+                print("I'm sorry, I didn't understand.")
+                framework.guide('Type the character y or n, then hit enter.')
